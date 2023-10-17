@@ -1,0 +1,115 @@
+body{
+    overflow:hidden;
+    font-family: Montserrat;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    border-bottom: 2px solid white;
+
+}
+
+.game-container {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    border-bottom: 20px solid turquoise;
+    border-right: 20px solid turquoise;
+
+}
+
+.snake {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    background-image: url("snake4.png");
+    background-size: cover;
+    z-index: 1000;
+}
+.test-height{
+    width: 20px;
+    background-color: turquoise;
+    height: 520px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.test-width{
+    width: 520px;
+    background-color: turquoise;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.score-div{
+    width: 520px;
+    height: 50px;
+    margin: 5px auto;
+    padding: 0;
+    background-color: #0a0a0a ;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.score-div h2{
+    margin-left: 5px;
+}
+.highscore-div i{
+    margin: 0 5px;
+}
+.modal{
+    width: 300px;
+    margin: 0 auto;
+    height: 400px;
+    background-color: #e5e5e5;
+    position: absolute;
+    top:50px;
+    left: 100px;
+    z-index: 3000;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.score-modal{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+}
+
+.score-modal button{
+    transition: box-shadow .3s;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    font-family: Montserrat;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: turquoise;
+    border: none;
+
+}
+.score-modal button:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.5);
+}
+
